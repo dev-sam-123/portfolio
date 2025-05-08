@@ -22,6 +22,7 @@ body {
 }
 
 .navbar__container {
+    background: #007ea7;
     display: flex;
     justify-content: space-between;
     height: 80px;
@@ -32,8 +33,6 @@ body {
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #007ea7 0%, #00a8e8 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -62,7 +61,7 @@ body {
 }
 
 .navbar__links {
-    color: #00a8e8;
+    color: #ffffff;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -106,6 +105,7 @@ body {
 
 @media screen and (max-width: 960px) {
  .navbar__container {
+    background: #007ea7;
     display: flex;
     justify-content: space-between;
     height: 80px;
