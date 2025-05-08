@@ -5,8 +5,12 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+body {
+   background: linear-gradient(to top, #007ea7 0%, #ffffff 100%);
+}
+
 .navbar {
-    background: #131313;
+    background: #c2dfe3;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -23,14 +27,13 @@
     height: 80px;
     z-index: 1;
     width: 100%;
-    max-width: 1300px;
     margin: 0 auto;
     padding: 0 50px;
 }
 
 #navbar__logo {
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-image: linear-gradient(to top, #007ea7 0%, #00a8e8 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -59,7 +62,7 @@
 }
 
 .navbar__links {
-    color: #fff;
+    color: #00a8e8;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,14 +84,14 @@
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    padding: 10px 20 px;
+    padding: 10px 20px;
     height: 100%;
     width: 100%;
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
-    color: #fff;
+    background: #00a8e8;
+    color: #ffffff;
 }
 
 .button:hover {
@@ -127,7 +130,7 @@
  }
 
  .navbar__menu.active {
-    background: #131313;
+    background: #ffffff;
     top: 100%;
     opacity: 1;
     transition: all 0.5s ease;
@@ -153,6 +156,7 @@
  }
 
  .navbar__links {
+   color: #00a8e8;
     text-align: center;
     padding: 2rem;
     width: 100%;
@@ -200,13 +204,13 @@
 
 /* Hero Section cSS */
 .main {
-   background-color: #141414;
    grid-template-columns: 1fr 1fr;
    align-items: center;
    justify-self: center;
-   margin: 0 auto;
+   /* margin: 0 auto; */
    height: 90vh;
-   background-color: #141414;
+   /* background-color: #007ea7; */
+   background: linear-gradient(to top, #007ea7 0%, #ffffff 100%);
    z-index: 1;
    width: 100%;
    max-width: 1300px;
@@ -215,8 +219,8 @@
 
 .main__content h1 {
    font-size: 4rem;
-   background-color: #ff8177;
-   background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+   /* background-color: #00a8e8; */
+   background-image: linear-gradient(to top, #00a8e8 50%, #003459 100%);
    background-size: 100%;
    -webkit-background-clip: text;
    -moz-background-clip: text;
@@ -226,8 +230,8 @@
 
 .main__content h2 {
    font-size: 4rem;
-   background-color: #ff8177;
-   background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+   background-color: #00a8e8;
+   background-image: linear-gradient(to top, #00a8e8 100%, #003459 50%);   
    background-size: 100%;
    -webkit-background-clip: text;
    -moz-background-clip: text;
@@ -239,12 +243,12 @@
    margin-top: 1rem;
    font-size: 2rem;
    font-weight: 700;
-   color: #fff;
+   color: #003459;
 }
 
 .main__btn {
    font-size: 1rem;
-   background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+   background-image: linear-gradient(to top, #007ea7 0%, #e0fbfc 100%);
    padding: 14px 32px;
    color: #fff;
    border-radius: 4px;
@@ -254,6 +258,10 @@
    position: relative;
    transition: all 0.35s;
    outline: none;
+}
+
+.main__btn:hover {
+   background: #003459;
 }
 
 .main__btn a {
